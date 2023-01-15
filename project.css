@@ -1,0 +1,866 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* for hero section */
+.container {
+    background-color: rgba(112, 255, 76, 0.235);
+    border: 1px solid black;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 0 30px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.back-video{
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+.container header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ /* for humburger menu */
+.bars{
+color: white;
+font-size: 20px;
+display: none;
+}
+
+.container header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo{
+    /* border: 1px solid white; */
+    color: rgb(228, 228, 228);
+    padding: 5px 20px;
+    font-size: 35px;
+    align-self: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.container header div{
+    color: rgb(241, 241, 241);
+}
+
+.logo-design{
+    color: orange;
+}
+
+.greeding{
+    /* border: 1px solid white; */
+    padding: 5px 20px;
+    align-self: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: 3.5px 3.5px 8px black;
+    color: orange;
+}
+
+.container header a{
+    border: 1px solid white;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.container header a:hover{
+    background-color: rgba(0, 0, 0, 0.54);
+    border: none;
+    color :orange
+}
+
+.info{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto 0;
+}
+
+.info h1{
+    /* border: 1px solid black; */
+    color: rgba(19, 143, 232, 0.635);
+    margin-bottom: 20px;
+    font-size: 5vw;
+}
+
+.info p{
+    /* border: 1px solid black; */
+    max-width: 40%;
+    margin-bottom: 50px;
+    color: rgb(237, 236, 236);
+}
+
+.info a{
+    border: 1px solid white;
+    border-radius: 20px;
+    display: block;
+    height: 40px;
+    width: 120px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    padding:0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.info a:hover{
+    background-color: rgba(0, 0, 0, 0.54);
+    border: none;
+    color :orange
+}  
+/* finish hero section */
+
+/* Rooms type */
+
+.rooms-type{
+    background-image: linear-gradient(360deg, rgba(135, 247, 252, 0.555), rgba(215, 208, 255, 0.501));
+    min-width: 100%;
+    padding: 20px;
+    color: rgb(157, 157, 157);
+}
+
+.rooms-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rooms-info-container div{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 0 20px rgba(170, 169, 169, 0.492);
+}
+
+.rooms-info-container div:hover{
+    transform: scale(1.1);
+}
+
+.rooms-type h1{
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.rooms-type h1 i{
+    color: rgb(0, 200, 255);
+}
+
+.rooms-info-container div img{
+    display: block;
+    width: 100%;
+}
+
+.rooms-info-container div h3{
+    padding: 0 10px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5px 0;
+
+}
+
+.rooms-info-container div .rooms-info{
+    padding: 0 20px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.nav-design{
+    text-decoration: none;
+    color: rgba(78, 100, 249, 0.833);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1.5px solid rgba(102, 104, 251, 0.569);
+    border-radius: 20px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 25px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    transition: 0.4s
+}
+
+.nav-design:hover{
+    color: white;
+    background-color: rgba(0, 119, 255, 0.669);
+    border: none;
+    line-height: 30px;
+    /* width: 120px;
+    height: 35px; */
+    transform: scale(1.1);
+}
+
+/* for beach */
+
+.beach{
+    padding: 30px 10px;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-image: linear-gradient(360deg,  rgba(215, 208, 255, 0.501), rgba(135, 247, 252, 0.555));
+}
+
+.beach-img-container{
+    margin: 10px 0;
+    border: 1px solid rgb(207, 204, 204);
+    border-radius: 10px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(170, 169, 169, 0.492);
+    transition: 0.3s;
+}
+
+.beach-img-container:hover{
+    transform: scale(1.1);
+}
+
+.beach-img-container img{
+    width: 100%;
+    display: block;
+}
+
+.beach-info-container{
+    width: 400px;
+    align-self: stretch;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+}
+
+.beach-info-container h2{
+    text-transform: capitalize;
+    color: rgb(130, 128, 128);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.beach-info-container h4{
+    text-transform: capitalize;
+    color: rgb(113, 113, 113);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+
+
+}
+
+.beach-info-container p{
+    color: rgb(136, 136, 136);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+
+
+}
+
+.beach-list{
+    border-radius: 5px;
+    padding: 7px 2px;
+    vertical-align: middle;
+    width: 100%;
+    color: rgb(136, 136, 136);
+    margin: 20px auto;
+    width: 200px;
+    box-shadow: 0 0 20px rgba(170, 169, 169, 0.492);
+    transition: 0.3s;
+
+}
+
+.beach-list:hover{
+    transform: scale(1.1);
+}
+
+.beach-list h5 {
+    text-align: end;
+    margin: 5px 0;
+    padding-right: 5px;
+}
+
+.beach-list ul li{
+    list-style-position: inside;
+    padding: 3px 40px;
+    list-style-type: square;
+    line-height: 1;
+}
+
+.beach-info-container a{
+    margin-top: 40px;
+}
+
+/* for restaurants and bars  */
+
+.restaurant-container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(80, 65, 65);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.restaurants{
+    border: 1px solid rgb(143, 141, 141);
+    min-width: 100%;
+    min-height: 100vh;
+    background-image:
+     url(./project-img/res-food2.jpg),
+     url(./project-img/premiun-res.jpg),
+     url(./project-img/premiun-rest2.jpg),
+     url(./project-img/res-food.jpg);
+    background-repeat: no-repeat;
+    background-size: 50.2% 50.2%;
+    background-position: bottom right, top left, bottom left, top right;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.restaurants h1{
+    color: rgb(57, 255, 219);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 0.5px black;
+    
+}
+
+.restaurant-info{
+    border: 1px solid rgba(17, 128, 0, 0.398);
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.064);
+    color: rgb(255, 255, 255);
+    max-width: 650px;
+    height: 400px;
+    background-color: rgba(108, 108, 108, 0.611);
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.restaurant-info h2{
+    color: rgba(57, 255, 219, 0.732);
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+.restaurant-info h4{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    color: rgba(57, 255, 219, 0.732);
+    text-align: end;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+
+.restaurant-info ul{
+    padding: 10px 20px;
+    
+}
+
+.restaurant-info ul li{
+    padding: 3px 20px;
+    list-style-position: inside;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+}
+
+.restaurant-info p{
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+
+
+/* for our amenities */
+
+.our-amenities-container{
+    padding: 20px;
+    min-width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(55, 163, 179);
+    background-image: linear-gradient(360deg, rgba(135, 247, 252, 0.555) ,  rgba(215, 208, 255, 0.501));
+}
+
+.our-amenities-img-container{
+    border-radius: 10px;
+    width: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 20px rgba(98, 98, 98, 0.611);
+}
+
+.our-amenities-img-container div{
+    width: 50%;
+}
+
+.our-amenities-img-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.our-amenities-text-container{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(201, 249, 177, 0.033);
+    padding: 40px 20px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 20px rgba(98, 98, 98, 0.611);
+
+
+}
+
+.our-amenities-text-container h2{
+    padding: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #809cfeec;
+
+}
+
+.our-amenities-text-container p{
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 5px;
+}
+
+.amenities-design{
+    display: inline-block;
+    padding: 0  10px;
+    margin: 0 auto;
+    color: #809cfeec;
+    
+
+}
+
+ .amenities-design div{
+    margin: 0 2px 10px 2px;
+    padding-left: 5px;
+    font-size: 13px;
+    width: 200px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+ }
+
+ /* for reservation form */
+
+ .reservation{
+   min-width: 100%;
+   padding: 30px 10px;
+   background-color: white;
+   background-image: linear-gradient(360deg,  rgba(215, 208, 255, 0.501), rgba(135, 247, 252, 0.555));
+ }
+
+ .reservation h2{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-style: italic;
+    color: rgb(135, 135, 135);
+}
+
+ .reservation p{
+    padding: 5px 10px;
+    color: rgb(135, 135, 135);
+    letter-spacing: 2.5px;
+    word-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+ }
+
+ .reservation form{
+    padding: 10px 10px;
+
+ }
+ .margin-left{
+    margin-left: 23px;
+ }
+
+ .radio-label{
+    display: inline-block;
+    width: 300px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+ .name-email-container, .check-in-out-container, .adults-children-container{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+ }
+
+ .room-type-message-container label, .adults-children-container label, .check-in-out-container label, .name-email-container label{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+    color: rgb(125, 125, 125);
+
+    
+ }
+
+.check-in-out-container input, .name-email-container input{
+    margin: 10px;
+    padding: 15px 18px;
+    width: 250px;
+    height: 28px;
+    border-style: none;
+    background-color: rgba(255, 252, 252, 0.963)
+    ;
+    border-radius: 15px;
+}
+
+
+::placeholder{
+    padding: 10px;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: smaller;
+    letter-spacing: 2px;
+    color: black;
+    
+}
+
+.adults-children-container select{
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(157, 220, 252);
+    width: 30px;
+
+
+}
+
+.room-type-message-container{
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px ;
+
+}
+
+
+.room-type-container{
+    min-width: 300px;
+    padding: 10px;
+    line-height: 2;
+}
+
+.room-type-header{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    
+}
+
+.textarea-design{
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.booking-button{
+    padding: 10px 10px;
+
+}
+
+.booking-button button{
+    text-transform: uppercase;
+    padding: 5px 15px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(96, 96, 252, 0.725);
+    color: white;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.booking-button button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: rgba(96, 96, 252, 0.725);
+    border: 1px solid gray;
+    
+}
+
+/* for footer */
+
+footer{
+    width: 100%;
+    
+}
+
+.our-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.contact-us, .for-cx-info{
+    padding: 10px;
+
+}
+
+.contact-us h2, .for-cx-info h2{
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 10px;
+
+}
+
+.contact-us nav p{
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+
+}
+
+.contact-us nav a, .for-cx-info nav a{
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.contact-us nav a:hover,
+.for-cx-info nav a:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: rgba(215, 215, 215, 0.746);
+}
+
+.copy-right{
+    height: 30px;
+    min-width: 100%;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 500px) {
+    .container header nav{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .greeding{
+         display: none;
+         font-size: 9px;
+    }
+    .logo{
+        font-size: 20px;
+        width: 160px;
+    }
+    .rooms-info-container div{
+        min-width: 100%;
+        margin: 10px 0;
+    }
+    .beach{
+        gap: 20px;
+    }
+    .beach-info-container{
+        padding: 10px;
+    }
+    .our-amenities-container{
+        width: 100%;
+        padding: 5px 15px;
+        justify-content: center;
+        font-size: small;
+    }
+    .our-amenities-img-container{
+       max-width: 100%;
+    }
+    .our-amenities-text-container{
+        align-self: stretch;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .amenities-design div{
+        width: 100%;
+    }
+
+    .reservation form{
+        padding: 0;
+    }
+
+    .name-email-container div, .check-in-out-container div, .adults-children-container div{
+        width: 100%;
+    
+     }
+
+    .check-in-out-container input, .name-email-container input{
+        margin: 10px auto;
+        width: 90%;
+        
+    }
+
+
+     .room-type-message-container div{
+        margin: auto;
+        min-width: 100%;
+    }
+
+     .room-type-container{
+        margin: auto;
+        padding: 0;
+     }
+
+     .room-type-container div{
+        text-align: center;
+     }
+     
+
+     .radio-label{
+        display: inline;
+     }
+    
+     .textarea-design{
+        max-width: 100%;
+        padding: 5px;
+     }
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    .restaurant-container{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .restaurant-info{
+        height: 500px;
+        width: 60vw;
+        border-radius: 30px 0 0 30px ;
+    }
+    .name-email-container, .check-in-out-container, .adults-children-container{
+        gap: 10px;
+     }
+    .textarea-design{
+        margin-top: 20px;
+    }
+
+    .room-type-message-container{
+        gap: 20px;
+     }
+
+    .room-type-message-container div{
+        text-align: center;
+    }
+
+
+}
